@@ -1,0 +1,147 @@
+@font-face {
+  font-family:'Inter' ;
+  src: url(./assets/fonts/static/Inter-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family:'Inter' ;
+  src: url(./assets/fonts/static/Inter-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'Inter' ;
+  src: url(./assets/fonts/static/Inter-Bold.ttf);
+  font-weight: 700;
+}
+
+:root{
+  /* colors */
+
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+
+  /* font-family */
+
+  --Inter:'Inter';
+
+  /* font-weight */
+
+  --fw-regular:400;
+  --fw-semi-bold:600;
+  --fw-bold:700;
+}
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul li{
+  list-style: none;
+}
+
+/* general styling */
+
+body{
+  font-family: var(--Inter);
+  background-color: var(--Grey-900);
+  font-size: 0.875rem;
+  margin-inline: auto;
+  margin-top: 10em;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper{
+  background-color: var(--Grey-800);
+  margin:4em 1em;
+  padding: 2em 3em 1.5em;
+  border-radius: .4em;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__img img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.profile__info{
+  padding-block: 1em;
+}
+
+h1{
+  font-size: 1.3rem;
+  font-weight: var(--fw-semi-bold);
+  text-align: center;
+  color: var(--White);
+}
+
+.user__location{
+  text-align: center;
+  color: var(--Green);
+  font-size: .7rem;
+  font-weight: var(--fw-bold);
+  margin-top: .5em;
+}
+
+.user__about{
+  margin-top: 2em;
+  margin-bottom: 1.7em;
+  font-size: .9rem;
+  color: var(--White);
+  opacity: .7;
+  text-align: center;
+}
+
+.social_links{
+  margin-top: 0em;
+}
+
+.social_links ul{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.1em;
+}
+
+ul li{
+  width: 100% ;
+}
+
+.links{
+  display: block ;
+  padding: 1em 1em ;
+  border-radius: .4em;
+  font-size: .9em;
+  font-weight: var(--fw-semi-bold);
+  background-color: var(--Grey-700);
+  color: var(--White);
+  transition: all .3s;
+}
+
+.links:hover{
+  background-color: var(--Green);
+  color: var(--Grey-900);
+}
